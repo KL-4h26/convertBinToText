@@ -62,7 +62,7 @@ function encrypt(){
 
 function decrypt(){
     // Получаем данные
-    let data = document.getElementById("binaryOutput").value
+    let data = document.getElementById("binaryOutput").value + " " 
     let format_data = ""
     let temp = "";
 
