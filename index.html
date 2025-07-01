@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текст ↔ Двоичный ASCII конвертер</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Текст ↔ Двоичный ASCII конвертер</h1>
+        
+        <div class="converter">
+            <div class="input-section">
+                <h2>Текст</h2>
+                <input id="textInput" placeholder="Введите текст здесь..."></input>
+                <button onclick="encrypt()">Преобразовать в двоичный код →</button>
+            </div>
+            <br>
+            <div class="output-section">
+                <h2>Двоичный код (ASCII)</h2>
+                <input id="binaryOutput" placeholder="Двоичное представление появится здесь..."></input>
+                <button onclick="decrypt()">Преобразовать в текст ←</button>
+            </div>
+        </div>
+        
+        <div class="info">
+            <p>Каждый символ преобразуется в 8-битный ASCII код. Пробелы между байтами.</p>
+            <p>(Знаки, пробелы и другие символы остаются как есть)</p>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
